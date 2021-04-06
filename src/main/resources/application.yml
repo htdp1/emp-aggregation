@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /emp-aggregation
+    
+spring:
+  application:
+    name: emp-aggregation
+  
+  config:
+    import: 
+    - application-camel.yml
+    
+logging:
+  level:
+    root: info                                # all logging
+    '[com.htdp1.empaggregation]': debug   # Application logging
